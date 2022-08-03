@@ -40,6 +40,15 @@ variable "SSh_location" {
   description ="Cidr for bastion"
   type        = string
 }
+variable "instance_type" {
+    type = string
+    default = "t2.micro"
+}
+
+variable "ami" {
+    type = string
+    default = "ami-0cff7528ff583bf9a"
+}
 
 # variable "DB_instance" {
 #   default     = db.t2.micro
